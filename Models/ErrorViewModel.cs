@@ -1,6 +1,6 @@
 using System;
 
-namespace SalaEscape.Models
+namespace SalaDeEscape.Models
 {
     public class ErrorViewModel
     {

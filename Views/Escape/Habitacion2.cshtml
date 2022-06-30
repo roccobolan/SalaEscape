@@ -1,0 +1,14 @@
+@{
+    ViewBag.title = "Habitacion 2";
+}
+@if(ViewBag.Error == true){
+    <h1> Tropezon no es caida, intenta otra vez </h1>
+}
+<p> Ahora vas a tener que usar tu conocimiento de la plantilla titular del city y completar los apellidos de los jugadores que faltan en la imgaen</p>
+<p> Aclaracion: "jugador 3 jugador 17 jugador 7 poner en este orden y en mayuscula" </p>
+<img src="/sala2.png" height="400px"> 
+<form method="post" action="Habitacion">
+    <input type="text" name="clave" placeholder="Ingresar los apellidos de los jugadores que nos se ven en la imgaen, ayudate con los numeros" required autocomplete="off">
+    <input type="hidden" name="sala" value='@ViewBag.EstadoJuego'>
+    <input type="submit" value="Aceptar">
+</form>

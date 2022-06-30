@@ -1,0 +1,13 @@
+@{
+    ViewBag.title = "Habitacion 3";
+}
+@if(ViewBag.Error == true){
+    <h1> Tropezon no es caida, intenta otra vez </h1>
+}
+<p> La imagen que se ve es de un dia importante y bello para los aficiionados del City, el dia que ganamos la Premier League, que fecha fue: </p>
+<img src="/sala3.png">
+<form method="post" action="Habitacion">
+    <input type="date" name="clave" placeholder="Ingrese la fecha" required autocomplete="off">
+    <input type="hidden" name="sala" value='@ViewBag.EstadoJuego'>
+    <input type="submit" value="Aceptar">
+</form>

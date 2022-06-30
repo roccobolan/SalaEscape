@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using SalaEscape.Models;
+using SalaDeEscape.Models;
 
-namespace SalaEscape.Controllers
+namespace SalaDeEscape.Controllers
 {
     public class HomeController : Controller
     {
@@ -18,12 +18,10 @@ namespace SalaEscape.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
-        {
+        public IActionResult Tutorial(){
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult Index()
         {
             return View();
         }

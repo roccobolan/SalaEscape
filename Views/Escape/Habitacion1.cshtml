@@ -1,0 +1,16 @@
+@{
+    ViewBag.Title = "Habitacion 1";
+}
+@if(ViewBag.Error == true){
+    <h1> Tropezon no es caida, intenta otra vez </h1>
+}
+
+
+<p> Comenzemos por el primer acertijo, en esta sala vas a tener que desifrar el mensje que esta escrito en un idioma tradicional de los hinchen honchins </p> 
+<img src="/sala1.png" class="imgs"> 
+
+<form method="post" action='@Url.Action("Habitacion", "Escape")'>
+    <input type="text" name="clave" placeholder="Ingrese el codigo traducido" required autocomplete="off">
+    <input type="hidden" name="sala" value=@ViewBag.EstadoJuego>
+    <input type="submit" value="Aceptar">
+</form>
